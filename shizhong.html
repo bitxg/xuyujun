@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>显示时间的网页</title>
+    <script>
+        function displayTime() {
+            var now = new Date();
+            var date = now.toDateString();
+            var time = now.toLocaleTimeString();
+            document.getElementById('datetime').innerHTML = '当前时间：' + date + ' ' + time;
+        }
+
+        setInterval(displayTime, 1000); // 每秒更新时间
+    </script>
+</head>
+<body>
+    <h1>欢迎来到显示时间的网页</h1>
+    <p id="datetime"></p>
+</body>
+</html>
